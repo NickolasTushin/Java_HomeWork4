@@ -1,3 +1,4 @@
+//Пусть дан LinkedList с несколькими элементами. Реализуйте метод(не void), который вернет “перевернутый” список.
 import java.util.Arrays;
 import java.util.LinkedList;
 
