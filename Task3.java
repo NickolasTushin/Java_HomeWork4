@@ -1,10 +1,34 @@
+//В калькулятор добавьте возможность отменить последнюю операцию.
+//Пример
+//1 + 2
+//ответ:
+//3
+//+
+//4
+//ответ:
+//7
+//+
+//2
+//ответ:
+//9
+//1
+//Ответ 8
+//Отмена -> 9
+//Отмена -> 7
+//Отмена -> 3
+//+
+//2
+//Ответ 5
+
+
+
 import java.util.Scanner;
 
 public class Task3 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        double[] results = new double[100]; // создаем массив для хранения результатов
-        int index = 0; // индекс текущего результата
+        double[] results = new double[100]; 
+        int index = 0; 
         System.out.print("Введите первое число: ");
         double num1 = Double.parseDouble(scan.nextLine());
         while (true) {
@@ -47,8 +71,8 @@ public class Task3 {
                 System.out.println("Неверный оператор");
                 continue;
             }
-            results[index] = result; // записываем текущий результат в массив
-            index++; // увеличиваем индекс текущего результата
+            results[index] = result; 
+            index++; 
             System.out.println("Ответ: " + result);
             num1 = result;
         }
